@@ -5,15 +5,15 @@ A basic [aglio](https://github.com/danielgtaylor/aglio) theme inspired by [Twitt
 
 ### Installation
 
-This is a quick (and quite dirty) theme, therefore I created it based on the default aglio theme. I only changed styles.
+This is a quick (and quite dirty) theme, therefore I created it based on the default aglio theme. I only changed CSS styles.
 
 To use it, you will have to copy `twitter.jade` directly into the `templates` folder of your aglio installation.
 
-To locale your aglio installation folder. On Mac OS X, you can try `which aglio | xargs ls -l`.
+To locate your aglio installation folder, on Mac OS X, you can try `which aglio | xargs ls -l`.
 ```
 lrwxr-xr-x  1 root  admin  38 17 avr 21:33 /usr/local/bin/aglio -> ../lib/node_modules/aglio/bin/aglio.js
 ```
-In that case put the jade template at `user/local/lib/node_modules/aglio/templates`.
+In that case copy the jade template at `/usr/local/lib/node_modules/aglio/templates`.
 
 ### Usage
 
