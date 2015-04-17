@@ -1,0 +1,148 @@
+extends _bootstrap-layout
+
+block styles
+    style.
+        pre code{display:block;padding:.5em;color:#fff}
+        /* Highlight.js Theme Tomorrow */
+        .hljs-comment,.hljs-title{color:#8e908c}.hljs-variable,.hljs-attribute,.hljs-tag,.hljs-regexp,.ruby .hljs-constant,.xml .hljs-tag .hljs-title,.xml .hljs-pi,.xml .hljs-doctype,.html .hljs-doctype,.css .hljs-id,.css .hljs-class,.css .hljs-pseudo{color:#73a771}.hljs-number,.hljs-preprocessor,.hljs-pragma,.hljs-built_in,.hljs-literal,.hljs-params,.hljs-constant{color:#f5871f}.ruby .hljs-class .hljs-title,.css .hljs-rules .hljs-attribute{color:#eab700}.hljs-string,.hljs-value,.hljs-inheritance,.hljs-header,.ruby .hljs-symbol,.xml .hljs-cdata{color:#dd2e44}.css .hljs-hexcolor{color:#3e999f}.hljs-function,.python .hljs-decorator,.python .hljs-title,.ruby .hljs-function .hljs-title,.ruby .hljs-title .hljs-keyword,.perl .hljs-sub,.javascript .hljs-title,.coffeescript .hljs-title{color:#4271ae}.hljs-keyword,.javascript .hljs-function{color:#8959a8}.hljs{display:block;background:white;color:#4d4d4c;padding:.5em}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .javascript,.xml .vbscript,.xml .css,.xml .hljs-cdata{opacity:.5}
+    style
+        :stylus
+            body, h1, h2, h3, h4, h5, .aglio
+                font-family 'Helvetica Neue', Helvetica !important
+
+            h1, h2, h3, h4, h5
+                font-weight 300
+
+            h3
+                font-size 28px
+                margin 30px 0 20px 0
+
+            h4
+                font-size 22px
+                margin 30px 0 20px 0
+
+            body
+                background-color #031d34
+
+
+            nav
+                padding-top 50px
+
+            .list-group, a.list-group-item, a.list-group-item:hover
+                background-color transparent
+
+            a.heading
+                border 0 !important
+                color #fff !important
+                font-size 18px !important
+                padding 8px !important
+                margin-left 0 !important
+                margin-bottom 8px !important
+
+            a.list-group-item
+                border 0
+                border-left 1px solid #50a5e6
+                color #50a5e6
+                font-size 15px
+                padding 6px
+                margin-left 8px
+                padding-left 16px
+                border-radius 0 !important
+
+            a.list-group-item > .badge
+                display none
+
+            a.list-group-item:hover
+                color #fff
+
+            nav > p > a, nav > p > a:hover
+                color #fff
+
+            .list-group-item
+                .toggle
+                    .open
+                        display block
+                    .closed
+                        display none
+
+            .list-group-item.collapsed
+                .toggle
+                    .open
+                        display none
+                    .closed
+                        display block
+
+            .list-group-item
+                a
+                    span.closed
+                        display none
+                    span.open
+                        display block
+
+            .list-group-item
+                a.collapsed
+                    span.closed
+                        display block
+                    span.open
+                        display none
+
+            .list-group-item.collapse
+                display none
+
+            .list-group-item.collapse.in
+                display block
+
+
+            .col-md-8
+                background-color #fefefe
+                padding 10px 50px 50px 50px
+
+            .col-md-8 > div > .panel
+                border 0 !important
+                box-shadow none
+
+            .col-md-8 > div > .panel > .panel-heading
+                border 0 !important
+                background-color transparent !important
+                padding 0 !important
+                margin 0 !important
+
+            .col-md-8 > div > .panel > .panel-body
+                padding 0 !important
+
+            section.panel
+                border 0
+
+            section.panel, section.panel > .panel-heading, section.panel .list-group-item
+                border-color #e1e8ed
+
+            section.panel > .panel-heading
+                background-color transparent
+
+            pre
+                background-color #002039
+
+            code
+                color #000
+                background-color #fff
+                font-family monospace !important
+
+            a[data-target]
+                cursor pointer
+
+            .back-to-top
+                position fixed
+                z-index 1
+                bottom 0px
+                right 24px
+                padding 4px 8px
+                background-color #eee
+                text-decoration none !important
+                border-top 1px solid rgba(0, 0, 0, 0.1)
+                border-left 1px solid rgba(0, 0, 0, 0.1)
+                border-right 1px solid rgba(0, 0, 0, 0.1)
+                border-top-left-radius 3px
+                border-top-right-radius 3px
+
+            .text-muted
+                display none
